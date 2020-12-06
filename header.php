@@ -22,7 +22,9 @@
     </title>
 
     <!-- Bootstrap Components -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">-->
+
 
     <!-- Custom CSS -->
     <link href="/assets/css/landing-page.css" rel="stylesheet">

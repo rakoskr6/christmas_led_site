@@ -5,15 +5,78 @@
 <body>
 
 	<div class="container">
-            <div class="row">
-		<p>stuff here</p>
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <p class="lead">Created by: Kyle Rakos and (maybe) Chris Chow</p>
+		<div class="row">
+			<h1 style="text-align: center">Select a Pattern</h1>
 		</div>
-            </div>
-        </div>
+
+		<div class="row">
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Pattern 1</button>
+			</div>
+			
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Pattern 2</button>
+			</div>
+			
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Pattern 3</button>
+			</div>
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Pattern 4</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<br>
+		</div>
+
+		<div class="row">
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Pattern 5</button>
+			</div>
+			
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Pattern 6</button>
+			</div>
+			
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Pattern 7</button>
+			</div>
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Pattern 8</button>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<br>
+			<br>
+		</div>
+
+
+		<div class="row">
+			<h1 style="text-align: center">Select Colors</h1>
+		</div>
+
+		<div class="row">
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Red</button>
+			</div>
+			
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Green</button>
+			</div>
+			
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">White</button>
+			</div>
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Blue</button>
+			</div>
+		</div>
+
+	</div>
+
 
 <?php include '../smallfooter.php';?>
 

@@ -5,15 +5,51 @@
 <body>
 
 	<div class="container">
-            <div class="row">
-		<p>stuff here</p>
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <p class="lead">Created by: Kyle Rakos and (maybe) Chris Chow</p>
+		<div class="row">
+			<h1 style="text-align: center">Select a Song</h1>
 		</div>
-            </div>
-        </div>
+
+		<div class="row">
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Song 1</button>
+			</div>
+			
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Song 2</button>
+			</div>
+			
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Song 3</button>
+			</div>
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Song 4</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<br>
+		</div>
+
+		<div class="row">
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Song 5</button>
+			</div>
+			
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Song 6</button>
+			</div>
+			
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Song 7</button>
+			</div>
+			<div class ="col-xs-3">
+				<button type="button" class="btn btn-default">Song 8</button>
+			</div>
+		</div>
+
+
+	</div>
+
 
 <?php include '../smallfooter.php';?>
 

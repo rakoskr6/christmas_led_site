@@ -6,7 +6,7 @@
 
 	<div class="container">
             <div class="row">
-		<p>stuff here</p>
+		<p>Currently just a prototype idea. Hopefully it will actually work eventually!</p>
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
