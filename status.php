@@ -1,7 +1,7 @@
 <?php
 // get current status of led lights
 // wow this is bad
-$handle = fopen("/home/pi/led_strips/status.log", "r");
+$handle = fopen("/opt/led_strips/status.log", "r");
 if ($handle) {
     $pid = fgets($handle);
     $heartbeat = fgets($handle);

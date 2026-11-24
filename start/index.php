@@ -11,7 +11,7 @@
         //$command = "echo aaa > /home/pi/aaa.txt";
     } else {
         error_log("Trying to start again");
-    	$command = '/home/pi/led_strips/start_from_server.sh';
+    	$command = '/opt/led_strips/start_from_server.sh';
     }
 	//system($command, $retval);
     pclose(popen($command, 'r'));

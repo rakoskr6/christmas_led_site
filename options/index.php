@@ -16,7 +16,7 @@
 			<div class="slidecontainer">
 				<input type="range" min="0" max="100" value="<?php
                     $output = "50";
-                    if (exec('/home/pi/led_strips/website_get_volume.sh', $output, $retval)) {
+                    if (exec('/opt/led_strips/website_get_volume.sh', $output, $retval)) {
                         echo implode($output);
                     } else {
                         echo 50;
