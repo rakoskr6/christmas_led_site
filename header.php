@@ -22,7 +22,8 @@
     </title>
 
     <!-- Bootstrap Components -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/assets/css/theme.min.css" />
    	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">-->
 
 
@@ -75,6 +76,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <!-- this is too dangerous to be in the header
+                    <li>
+                        <a href="/start/">Start/Stop</a>
+                    </li>
+                    -->
                     <li>
                         <a href="/patterns/">Patterns</a>
                     </li>
