@@ -1,0 +1,7 @@
+# The site only runs on the Raspberry Pi, so keep every text file in Linux
+# (LF) format, even when checked out on Windows.
+* text=auto eol=lf
+
+*.ico binary
+*.png binary
+*.jpg binary
