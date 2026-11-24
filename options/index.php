@@ -14,14 +14,15 @@
 
 		<div class="row">
 			<div class="slidecontainer">
-				<input type="range" min="0" max="100" value="<?php
-                    $output = "50";
-                    if (exec('/opt/led_strips/website_get_volume.sh', $output, $retval)) {
-                        echo implode($output);
-                    } else {
-                        echo 50;
+				<?php
+                    // Current capture volume (0-100), or 50 if it can't be read
+                    $volume = filter_var(trim((string)shell_exec(LED_DIR . '/website_get_volume.sh')), FILTER_VALIDATE_INT,
+                                         ['options' => ['min_range' => 0, 'max_range' => 100]]);
+                    if ($volume === false) {
+                        $volume = 50;
                     }
-                ?>" class="slider" id="volRange">
+                ?>
+				<input type="range" min="0" max="100" value="<?php echo $volume; ?>" class="slider" id="volRange">
 				<p>Volume: <span id="volume"></span>%</p>
 				</div>
 
@@ -30,9 +31,13 @@
 				var output_vol = document.getElementById("volume");
 				output_vol.innerHTML = slider_vol.value;
 
+				// Show the number while dragging; set the volume when the slider is let go
 				slider_vol.oninput = function() {
 				  output_vol.innerHTML = this.value;
-                  $.get("volume.php?volume=" + slider_vol.value);
+				}
+				slider_vol.onchange = function() {
+				  $.post("volume.php", {volume: this.value})
+				    .fail(function() { alert("Couldn't set the volume."); });
 				}
 				</script>	
 			</div>

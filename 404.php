@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <?php
+	http_response_code(404);
 	$title = 'Kyle Rakos';
 	include 'header.php';
 ?>

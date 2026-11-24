@@ -19,12 +19,6 @@
                         <li>
                             <a href="/about/" class="btn btn-default btn-lg"> <span class="network-name">About</span></a>
                         </li>
-                        <li>
-                            <a href="/ieee/" class="btn btn-default btn-lg"> <span class="network-name">IEEE</span></a>
-                        </li>
-                        <li>
-                            <a href="/docs/resume.pdf" class="btn btn-default btn-lg"> <span class="network-name">Resume</span></a>
-                        </li>
                         
                 </ul>
                 

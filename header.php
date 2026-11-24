@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/lib.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,6 +41,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/assets/js/bootstrap.min.js"></script>
+
+    <!-- Every $.post() sends this page's token; lib.php refuses actions without it -->
+    <script>
+        $.ajaxSetup({ headers: { 'X-CSRF-Token': '<?php echo csrf_token(); ?>' } });
+    </script>
 
 	<style>
     	legend { 

@@ -1,12 +1,5 @@
 <?php
-	$title = 'LED Christmas Lights';
-	include '../header.php';
-
-	$command = escapeshellcmd('/opt/led_strips/set_config.py mode static');
-	$output = shell_exec($command);
-	echo "<p>";
-	echo $output;
-	echo "</p>";
-
-	//header("Location: ../index.php");
-?>
+// POST: pattern (static) mode.
+require __DIR__ . '/../lib.php';
+require_action();
+finish(run_command([LED_DIR . '/set_config.py', 'mode', 'static']));
